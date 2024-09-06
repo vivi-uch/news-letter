@@ -12,7 +12,7 @@ export default function Body() {
         />
         {/* Laptop Image */}
         <img
-          src="images/image-web-3-Desktop.jpg"
+          src="images/image-web-3-desktop.jpg"
           alt="Laptop-image"
           className="hidden md:block"
         />
