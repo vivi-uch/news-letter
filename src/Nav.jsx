@@ -54,12 +54,22 @@ export default function Nav() {
               />
             </button>
 
-            <nav className="flex flex-col gap-2 mt-24 text-lg text-gray-800 hover:text-gray-600 font-semibold">
-              <a href="#home">Home</a>
-              <a href="#new">New</a>
-              <a href="#popular">Popular</a>
-              <a href="#trending">Trending</a>
-              <a href="#categories">Categories</a>
+            <nav className="flex flex-col gap-2 mt-24 text-lg text-gray-800 font-semibold">
+              <a href="#home" className="hover:text-gray-600 ">
+                Home
+              </a>
+              <a href="#new" className="hover:text-gray-600 ">
+                New
+              </a>
+              <a href="#popular" className="hover:text-gray-600 ">
+                Popular
+              </a>
+              <a href="#trending" className="hover:text-gray-600 ">
+                Trending
+              </a>
+              <a href="#categories" className="hover:text-gray-600 ">
+                Categories
+              </a>
             </nav>
           </div>
         </div>

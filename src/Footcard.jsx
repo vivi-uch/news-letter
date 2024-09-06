@@ -1,6 +1,6 @@
 export default function Footcard() {
   return (
-    <div className="flex flex-col gap-6 lg:flex-row lg:justify-evenly">
+    <div className="grid grid-cols-1 gap-6  lg:grid-cols-3">
       {cardList.map((card) => (
         <Card
           key={card.num}
