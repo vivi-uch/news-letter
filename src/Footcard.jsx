@@ -1,6 +1,6 @@
 export default function Footcard() {
   return (
-    <div className="grid grid-cols-1 gap-6  lg:grid-cols-3 md:grid-cols-2">
+    <div className="grid grid-cols-1 gap-6 lg:gap-0 lg:grid-cols-3 md:grid-cols-2">
       {cardList.map((card) => (
         <Card
           key={card.num}
@@ -18,9 +18,8 @@ export default function Footcard() {
 function Card({ src, num, heading, para, href }) {
   return (
     <div className="flex gap-3">
-      <div>
-        <img src={src} alt={num} className="w-32 lg:w-40 h-full" />
-      </div>
+      <img src={src} alt={num} className="w-32 h-full" />
+      {/*no need to put the img in a div*/}
       <div className="flex flex-col gap-3 lg:gap-1">
         <h1 className="text-red-600 font-bold lg:text-4xl">{num}</h1>
         <a href={href}>
