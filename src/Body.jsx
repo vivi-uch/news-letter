@@ -38,7 +38,12 @@ export default function Body() {
         <h2 className="font-bold text-orange-400 text-xl lg:text-3xl">New</h2>
         <div className="flex flex-col gap-4 my-4 lg:gap-6 lg:mt-12">
           {headCardList.map((card) => (
-            <Headcard heading={card.heading} para={card.para} hr={card.hr} />
+            <Headcard
+              heading={card.heading}
+              para={card.para}
+              hr={card.hr}
+              key={card.heading}
+            />
           ))}
         </div>
       </div>
