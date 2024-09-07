@@ -51,8 +51,8 @@ export default function Nav() {
                   // className="absolute top-4 right-[4.5rem]"
                 >
                   <img
-                    src="images/icon-menu-close.svg"
-                    alt="close-button"
+                    src="images/image"
+                    alt="images/icon-menu-close.svg"
                     className="w-6"
                   />
                 </button>

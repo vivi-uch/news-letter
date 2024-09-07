@@ -3,7 +3,7 @@ import Headcard from "./Headcard";
 export default function Body() {
   return (
     <div className="flex flex-col lg:flex-row  my-6 lg:my-12 gap-6">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 lg:w-11/12">
         {/* {mobile design} */}
         <img
           src="images/image-web-3-mobile.jpg"
@@ -17,7 +17,7 @@ export default function Body() {
           className="hidden md:block"
         />
 
-        <div className="flex flex-col gap-4 lg:flex-row lg:gap-24">
+        <div className="flex flex-col gap-4 lg:flex-row lg:gap-16">
           <h1 className="font-bold text-4xl lg:text-5xl">
             The Bright Future of Web 3.0?
           </h1>
@@ -34,9 +34,9 @@ export default function Body() {
         </div>
       </div>
 
-      <div className="p-3 bg-blue-950">
+      <div className="p-3 bg-blue-950 lg:p-5">
         <h2 className="font-bold text-orange-400 text-xl lg:text-3xl">New</h2>
-        <div className="flex flex-col gap-4 my-4 lg:gap-6">
+        <div className="flex flex-col gap-4 my-4 lg:gap-6 lg:mt-12">
           {headCardList.map((card) => (
             <Headcard heading={card.heading} para={card.para} hr={card.hr} />
           ))}
